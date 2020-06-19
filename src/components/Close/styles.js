@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { COLOR_PRIMARY, COLOR_LIGHT } from "./../../styles/variables";
 import { Form } from "antd";
-import { FileExclamationOutlined } from "@ant-design/icons";
-import { Row } from "antd";
 
 export const CloseContainer = styled.div``;
 

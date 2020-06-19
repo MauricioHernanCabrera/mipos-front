@@ -9,3 +9,7 @@ export const SiteLayout = styled(Layout)`
 export const SiteBody = styled(Layout)`
   background-color: ${COLOR_LIGHT};
 `;
+
+export const SiteFooter = styled(Layout.Footer)`
+  text-align: right;
+`;

@@ -2,7 +2,7 @@ import React, { Fragment, useContext, useEffect, useState } from "react";
 import axios from "axios";
 import ReactLoading from "react-loading";
 import { Input, Button, Row, Col, InputNumber, Form, Alert } from "antd";
-import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
+import { MinusCircleOutlined } from "@ant-design/icons";
 import { CloseContainer, CloseHeader, CloseBody } from "./styles";
 import { Context } from "./../../Context";
 import { COLOR_GREY2 } from "./../../styles/variables";
