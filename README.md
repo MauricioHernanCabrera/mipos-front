@@ -1,7 +1,1 @@
-# links
-  - link(*)
-  - name
-  - categories
-
-# categorias
-  - name
+# MipOs front
