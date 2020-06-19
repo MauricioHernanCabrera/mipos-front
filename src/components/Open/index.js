@@ -24,8 +24,6 @@ const Open = () => {
         );
         const data = resBalance.data.results;
 
-        console.log("______data", data);
-
         if (typeof data.value_open == "number") {
           setInitialValues({
             ...data,

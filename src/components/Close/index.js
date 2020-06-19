@@ -73,7 +73,6 @@ const Close = () => {
 
   const onFinish = async (values) => {
     try {
-      console.log("Success:", values);
       const value_close = pesosToCentavos(calculateValueClose(values));
       const value_card = pesosToCentavos(values.value_card);
       const value_cash = pesosToCentavos(values.value_cash);
@@ -106,7 +105,6 @@ const Close = () => {
         type: "success",
         message: res.data.msg,
       });
-      console.log(res);
     } catch (error) {
       console.log(error);
     }
