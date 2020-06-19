@@ -9,7 +9,6 @@ import { Context } from "./../../Context";
 import { pesosToCentavos, centavosToPesos } from "./../../utils";
 
 import FormItem from "./../../components/FormItem";
-import config from "./../../config";
 
 const Open = () => {
   const { status, setStatus } = useContext(Context);
@@ -20,7 +19,9 @@ const Open = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const resBalance = await axios.get(`${config.API_URL}/balance`);
+        const resBalance = await axios.get(
+          `${process.env.REACT_APP_API_URL}/balance`
+        );
         const data = resBalance.data.results;
 
         console.log("______data", data);
@@ -76,7 +77,10 @@ const Open = () => {
         observation,
       };
 
-      await axios.post(`${config.API_URL}/balance/open/day`, body);
+      await axios.post(
+        `${process.env.REACT_APP_API_URL}/balance/open/day`,
+        body
+      );
 
       setStatus("open");
 
@@ -172,7 +176,7 @@ const Open = () => {
           {status === "no-interaction" && (
             <Row justify="center" style={{ marginTop: "16px" }}>
               <FormItem>
-                <Button type="primary" htmlType="submit">
+                <Button type="primary" htmlType="submit" disabled={loading}>
                   Enviar
                 </Button>
               </FormItem>

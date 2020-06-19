@@ -7,7 +7,6 @@ import { CloseContainer, CloseHeader, CloseBody } from "./styles";
 import { Context } from "./../../Context";
 import { COLOR_GREY2 } from "./../../styles/variables";
 import FormItem from "./../../components/FormItem";
-import config from "./../../config";
 import {
   pesosToCentavos,
   centavosToPesos,
@@ -29,7 +28,7 @@ const Close = () => {
       setLoading(true);
       try {
         const resOpen = await axios.get(
-          `${config.API_URL}/has/open/cashier/balance`
+          `${process.env.REACT_APP_API_URL}/has/open/cashier/balance`
         );
 
         const newDate = new Date().toJSON();
@@ -99,7 +98,7 @@ const Close = () => {
       };
 
       const res = await axios.post(
-        `${config.API_URL}/cashier/balance/close/day`,
+        `${process.env.REACT_APP_API_URL}/cashier/balance/close/day`,
         body
       );
       setStatus("close");
