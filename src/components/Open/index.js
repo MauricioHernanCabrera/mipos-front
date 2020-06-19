@@ -162,7 +162,7 @@ const Open = () => {
             </Col>
 
             <Col span={24}>
-              <FormItem label="Obsersaciones" name="observation">
+              <FormItem label="Observaciones" name="observation">
                 <Input.TextArea
                   autoSize={{ minRows: 5, maxRows: 7 }}
                   disabled={status === "open"}

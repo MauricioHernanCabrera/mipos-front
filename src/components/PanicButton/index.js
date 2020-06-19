@@ -7,9 +7,7 @@ import panicButton from "./../../assets/images/panic-button.png";
 const Component = () => {
   const handleOnClick = async () => {
     try {
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/context/clean`
-      );
+      await axios.post(`${process.env.REACT_APP_API_URL}/context/clean`);
       window.location.reload();
     } catch (error) {}
   };

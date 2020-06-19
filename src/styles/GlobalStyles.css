@@ -18,16 +18,16 @@ h6 {
   padding-right: 48px !important;
 }
 
-.ant-btn.ant-btn-primary,
-.ant-btn.ant-btn-primary:focus,
-.ant-btn.ant-btn-primary.ant-btn:not([disabled]):hover {
+button.ant-btn-primary,
+button.ant-btn-primary:focus,
+button.ant-btn-primary.ant-btn:not([disabled]):hover {
   background: #4453e2;
   border-color: #4453e2;
 }
 
-.ant-btn.ant-btn-secondary,
-.ant-btn.ant-btn-secondary:focus,
-.ant-btn.ant-btn-secondary.ant-btn:not([disabled]):hover {
+button.ant-btn-secondary,
+button.ant-btn-secondary:focus,
+button.ant-btn-secondary.ant-btn:not([disabled]):hover {
   color: #4453e2;
   background: #03e3e1;
   border-color: #03e3e1;
