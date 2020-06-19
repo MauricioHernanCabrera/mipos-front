@@ -10,7 +10,6 @@ const Component = () => {
       const res = await axios.post(
         `${process.env.REACT_APP_API_URL}/context/clean`
       );
-      console.log(res);
       window.location.reload();
     } catch (error) {}
   };
